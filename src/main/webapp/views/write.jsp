@@ -19,8 +19,8 @@
 	<div>
 		<h2>방명록 : 작성화면</h2>
 		<hr>
-		<p>[ <a href="${pageContext.request.contextPath}/MyController?cmd=list">목록으로</a> ]</p>
-		<form method="post" action="${pageContext.request.contextPath}/MyController">
+		<p>[ <a href="list.jsp">목록으로</a> ]</p>
+		<form method="post" action="write_ok.jsp">
 			<table>
 				<tbody>
 					<tr><th class="bg">작성자</th> <td><input type="text" name="name" ></td></tr>
@@ -36,7 +36,6 @@
 				<tfoot>
 					<tr>
 						<td colspan="2">
-							<input type="hidden"  name="cmd" value="write_ok" >
 							<input type="submit" value="저장">
 							<input type="reset"  value="취소"> 
 						</td>
